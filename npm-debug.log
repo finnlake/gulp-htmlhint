@@ -1,0 +1,120 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish',
+1 verbose cli   '.' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose publish [ '.' ]
+5 verbose cache add [ '.', null ]
+6 verbose cache add name=undefined spec="." args=[".",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: '.',
+7 verbose parsed url   path: '.',
+7 verbose parsed url   href: '.' }
+8 silly lockFile 3a52ce78- .
+9 verbose lock . C:\Users\ssssif\AppData\Roaming\npm-cache\3a52ce78-.lock
+10 verbose tar pack [ 'C:\\Users\\ssssif\\AppData\\Roaming\\npm-cache\\gulp-htmlhint\\0.3.2\\package.tgz',
+10 verbose tar pack   '.' ]
+11 verbose tarball C:\Users\ssssif\AppData\Roaming\npm-cache\gulp-htmlhint\0.3.2\package.tgz
+12 verbose folder .
+13 info prepublish gulp-htmlhint@0.3.2
+14 silly lockFile 1f1177db-tar tar://.
+15 verbose lock tar://. C:\Users\ssssif\AppData\Roaming\npm-cache\1f1177db-tar.lock
+16 silly lockFile b2516f62--gulp-htmlhint-0-3-2-package-tgz tar://C:\Users\ssssif\AppData\Roaming\npm-cache\gulp-htmlhint\0.3.2\package.tgz
+17 verbose lock tar://C:\Users\ssssif\AppData\Roaming\npm-cache\gulp-htmlhint\0.3.2\package.tgz C:\Users\ssssif\AppData\Roaming\npm-cache\b2516f62--gulp-htmlhint-0-3-2-package-tgz.lock
+18 silly lockFile 1f1177db-tar tar://.
+19 silly lockFile 1f1177db-tar tar://.
+20 silly lockFile b2516f62--gulp-htmlhint-0-3-2-package-tgz tar://C:\Users\ssssif\AppData\Roaming\npm-cache\gulp-htmlhint\0.3.2\package.tgz
+21 silly lockFile b2516f62--gulp-htmlhint-0-3-2-package-tgz tar://C:\Users\ssssif\AppData\Roaming\npm-cache\gulp-htmlhint\0.3.2\package.tgz
+22 silly lockFile df539bf0-ache-gulp-htmlhint-0-3-2-package C:\Users\ssssif\AppData\Roaming\npm-cache\gulp-htmlhint\0.3.2\package
+23 verbose lock C:\Users\ssssif\AppData\Roaming\npm-cache\gulp-htmlhint\0.3.2\package C:\Users\ssssif\AppData\Roaming\npm-cache\df539bf0-ache-gulp-htmlhint-0-3-2-package.lock
+24 silly lockFile df539bf0-ache-gulp-htmlhint-0-3-2-package C:\Users\ssssif\AppData\Roaming\npm-cache\gulp-htmlhint\0.3.2\package
+25 silly lockFile df539bf0-ache-gulp-htmlhint-0-3-2-package C:\Users\ssssif\AppData\Roaming\npm-cache\gulp-htmlhint\0.3.2\package
+26 silly lockFile 3a52ce78- .
+27 silly lockFile 3a52ce78- .
+28 silly publish { name: 'gulp-htmlhint',
+28 silly publish   version: '0.3.2',
+28 silly publish   description: 'A plugin for Gulp',
+28 silly publish   keywords: [ 'gulpplugin' ],
+28 silly publish   homepage: 'https://github.com/bezoerb/gulp-htmlhint',
+28 silly publish   bugs: { url: 'https://github.com/bezoerb/gulp-htmlhint/issues' },
+28 silly publish   author: { name: 'Ben Zörb', url: 'https://github.com/bezoerb' },
+28 silly publish   main: './index.js',
+28 silly publish   repository:
+28 silly publish    { type: 'git',
+28 silly publish      url: 'git://github.com/bezoerb/gulp-htmlhint.git' },
+28 silly publish   scripts: { test: 'xo && mocha test/*.js' },
+28 silly publish   dependencies:
+28 silly publish    { 'gulp-util': '^3.0.0',
+28 silly publish      'scania-htmlhint': '~0.9.14',
+28 silly publish      'strip-json-comments': '^2.0.0',
+28 silly publish      through2: '^2.0.0' },
+28 silly publish   devDependencies:
+28 silly publish    { 'htmlhint-stylish': '^1.0.0',
+28 silly publish      jshint: '^2.6.3',
+28 silly publish      mocha: '^2.2.1',
+28 silly publish      should: '^8.1.1',
+28 silly publish      'vinyl-fs': '^2.3.1',
+28 silly publish      xo: '^0.12.1' },
+28 silly publish   xo: { space: 4 },
+28 silly publish   engines: { node: '>=0.8.0', npm: '>=1.2.10' },
+28 silly publish   licenses: [ { type: 'MIT' } ],
+28 silly publish   directories: { test: 'test' },
+28 silly publish   license: 'MIT',
+28 silly publish   readme: '# gulp-htmlhint [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][depstat-image]][depstat-url]\r\n\r\n> [htmlhint](https://github.com/yaniswang/HTMLHint) wrapper for [gulp](https://github.com/wearefractal/gulp) to validate your HTML\r\n\r\n\r\n## Usage\r\n\r\nFirst, install `gulp-htmlhint` as a development dependency:\r\n\r\n```shell\r\nnpm install --save-dev gulp-htmlhint\r\n```\r\n\r\nThen, add it to your `gulpfile.js`:\r\n\r\n```javascript\r\nvar htmlhint = require("gulp-htmlhint");\r\n\r\ngulp.src("./src/*.html")\r\n\t.pipe(htmlhint())\r\n```\r\n\r\n\r\n\r\n## API\r\n\r\n### htmlhint(options)\r\n\r\nSee all rules here: [https://github.com/yaniswang/HTMLHint/wiki/Rules](https://github.com/yaniswang/HTMLHint/wiki/Rules)\r\n\r\nIf options is empty, task use standard options.\r\n\r\n#### options.htmlhintrc\r\nType: `String`\r\nDefault value: `null`\r\n\r\nIf this filename is specified, options and globals defined there will be used. Task and target options override the options within the `htmlhintrc` file. The `htmlhintrc` file must be valid JSON and looks something like this:\r\n\r\n```json\r\n{\r\n  "tag-pair": true,\r\n}\r\n```\r\n\r\n```javascript\r\nvar htmlhint = require("gulp-htmlhint");\r\n\r\ngulp.src("./src/*.html")\r\n\t.pipe(htmlhint(\'.htmlhintrc\'))\r\n```\r\n\r\n\r\n## Reporters\r\n\r\n### Default reporter\r\n```javascript\r\nvar htmlhint = require("gulp-htmlhint");\r\n\r\ngulp.src("./src/*.html")\r\n\t.pipe(htmlhint())\r\n\t.pipe(htmlhint.reporter())\r\n```\r\n\r\n\r\n### Fail reporter\r\n\r\nUse this reporter if you want your task to fail in case of a HTMLHint Error.\r\nIt also prints a summary of all errors in the first bad file.\r\n\r\n```javascript\r\nvar htmlhint = require("gulp-htmlhint");\r\n\r\ngulp.src("./src/*.html")\r\n\t.pipe(htmlhint())\r\n\t.pipe(htmlhint.failReporter())\r\n```\r\n\r\nOptionally, you can pass the `htmlhint.failReporter` a config object\r\n\r\n__Plugin options:__\r\n\r\n- *suppress*\r\n\r\n  When set to `true`, it does not display file errors on failure.\r\n  Use in conjunction with the default and/or custom reporter(s).\r\n  Prevents duplication of error messages when used along with another reporter.\r\n\r\n  ```javascript\r\n  var htmlhint = require("gulp-htmlhint");\r\n\r\n  gulp.src("./src/*.html")\r\n\t  .pipe(htmlhint())\r\n\t  .pipe(htmlhint.reporter("htmlhint-stylish"))\r\n\t  .pipe(htmlhint.failReporter({ suppress: true })\r\n  ```\r\n\r\n## License\r\n\r\n[MIT License](bezoerb.mit-license.org)\r\n\r\n[npm-url]: https://npmjs.org/package/gulp-htmlhint\r\n[npm-image]: https://badge.fury.io/js/gulp-htmlhint.svg\r\n\r\n[travis-url]: http://travis-ci.org/bezoerb/gulp-htmlhint\r\n[travis-image]: https://secure.travis-ci.org/bezoerb/gulp-htmlhint.svg?branch=master\r\n\r\n[depstat-url]: https://david-dm.org/bezoerb/gulp-htmlhint\r\n[depstat-image]: https://david-dm.org/bezoerb/gulp-htmlhint.svg\r\n',
+28 silly publish   readmeFilename: 'README.md',
+28 silly publish   gitHead: 'c7eb51a3c764cfa9a77de52155540a5069a67a46',
+28 silly publish   _id: 'gulp-htmlhint@0.3.2',
+28 silly publish   _shasum: '54535e9873fa045540c13d0ad9388748d1fd36a1',
+28 silly publish   _from: '.' }
+29 verbose request where is /gulp-htmlhint
+30 verbose request registry https://registry.npmjs.org/
+31 verbose request id 46885b4436d878e4
+32 verbose url raw /gulp-htmlhint
+33 verbose url resolving [ 'https://registry.npmjs.org/', './gulp-htmlhint' ]
+34 verbose url resolved https://registry.npmjs.org/gulp-htmlhint
+35 verbose request where is https://registry.npmjs.org/gulp-htmlhint
+36 info trying registry request attempt 1 at 13:47:33
+37 http PUT https://registry.npmjs.org/gulp-htmlhint
+38 http 403 https://registry.npmjs.org/gulp-htmlhint
+39 verbose headers { 'content-type': 'application/json',
+39 verbose headers   'cache-control': 'max-age=300',
+39 verbose headers   'content-length': '105',
+39 verbose headers   'accept-ranges': 'bytes',
+39 verbose headers   date: 'Wed, 23 Mar 2016 12:47:34 GMT',
+39 verbose headers   via: '1.1 varnish',
+39 verbose headers   connection: 'keep-alive',
+39 verbose headers   'x-served-by': 'cache-ams4144-AMS',
+39 verbose headers   'x-cache': 'MISS',
+39 verbose headers   'x-cache-hits': '0',
+39 verbose headers   'x-timer': 'S1458737253.089780,VS0,VE1066' }
+40 error publish Failed PUT 403
+41 error Error: You do not have permission to publish 'gulp-htmlhint'. Are you logged in as the correct user? : gulp-htmlhint
+41 error     at RegClient.<anonymous> (c:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:308:14)
+41 error     at Request._callback (c:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:246:65)
+41 error     at Request.self.callback (c:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:236:22)
+41 error     at Request.emit (events.js:98:17)
+41 error     at Request.<anonymous> (c:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1142:14)
+41 error     at Request.emit (events.js:117:20)
+41 error     at IncomingMessage.<anonymous> (c:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1096:12)
+41 error     at IncomingMessage.emit (events.js:117:20)
+41 error     at _stream_readable.js:943:16
+41 error     at process._tickCallback (node.js:419:13)
+42 error If you need help, you may report this *entire* log,
+42 error including the npm and node versions, at:
+42 error     <http://github.com/npm/npm/issues>
+43 error System Windows_NT 6.1.7601
+44 error command "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish" "."
+45 error cwd c:\git\gulp-htmlhint
+46 error node -v v0.10.32
+47 error npm -v 1.4.28
+48 verbose exit [ 1, true ]
